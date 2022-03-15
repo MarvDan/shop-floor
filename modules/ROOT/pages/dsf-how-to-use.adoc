@@ -1,0 +1,82 @@
+== How to use it
+
+This is the documentation about shop floor and its different tools. Here you are going to learn how to create new projects, so that they can include continuous integration and continuous delivery processes, and be deployed automatically in different environments.
+
+==  Prerequisites - Provisioning environment
+
+To start working you need to have some services running in your provisioning environment, such as Jenkins (automation server), GitLab (git repository), SonarQube (program analysis), Nexus (software repository) or similar.
+
+To host those services we recommend to have a Production Line instance but you can use other platforms. Here is the list for the different options:
+
+  * link:dsf-provisioning-production-line.adoc[Production Line].
+// TODO:  * link:dsf-provisioning-dsf4openshift.adoc[dsf4openshift].
+  * link:dsf-provisioning-dsf4docker.adoc[dsf4docker].
+
+==  Step 1 - Configuration and services integration
+
+The first step is configuring your services and integrate them with jenkins. Here you have an example about how to manually configure the next services:
+
+  * link:dsf-configure-nexus.adoc[Nexus].
+  * link:dsf-configure-sonarqube.adoc[SonarQube].
+//  * link:dsf-configure-jenkins.adoc[Jenkins].
+
+==  Step 2 - Create the project
+
+== Create and integrate git repository
+
+The second is create or git repository and integrate it with Jenkins.
+
+Here you can find a manual guide about how it:
+
+* link:dsf-configure-gitlab.adoc[GitLab] new project.
+
+== Start new devonfw project
+
+It is time to create your devonfw project:
+
+You can find all that you need about how to create a link:dsf-create-new-devonfw-project.adoc[new devonfw project]
+
+== cicd configuration
+
+Now you need to add cicd files in your project.
+
+== ==  Manual configuration
+
+== == Jenkinsfile
+
+Here you can find all that you need to know to do your link:dsf-configure-jenkinsfile.adoc[Jenkinsfile].
+
+== ==  Dockerfile
+
+Here you can find all that you need to know to do your link:dsf-configure-dockerfile.adoc[Dockerfile].
+
+== ==  Automatic configuration
+
+== == cicdgen
+
+If you are using production line for provisioning you could use cicdgen to configure automatically almost everything explained in the manual configuration. To do it see the https://github.com/devonfw/cicdgen/wiki[cicdgen] documentation.
+
+////
+== == Optional components
+
+  * TODO: Manual Guide about add things like config service for angular (Maybe it's going to be included in cicdgen)
+////
+
+==  Step 3 - Deployment
+
+The third is configure our deployment environment. Here is the list for the different options:
+
+  * link:dsf-deployment-dsf4openshift.adoc[dsf4openshift].
+// TODO:  * link:dsf-deployment-dsf4docker.adoc[dsf4docker].
+
+==  Step 4 - Monitoring
+
+Here you can find information about tools for monitoring:
+
+ * link:dsf-configure-jenkins-build-monitor-view.adoc[build monitor view] for Jenkins. With this tool you will be able to see in real time what is the state of your Jenkins pipelines.
+
+////
+==  Step 5 - Verification
+
+  * TODO: Manual Guide
+////

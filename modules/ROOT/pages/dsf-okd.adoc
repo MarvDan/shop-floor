@@ -1,0 +1,22 @@
+== OKD _(OpenShift Origin)_
+
+==  What is OKD
+
+OKD is a distribution of Kubernetes optimized for continuous application development and multi-tenant deployment. OKD is the upstream Kubernetes distribution embedded in Red Hat OpenShift.
+
+OKD embeds Kubernetes and extends it with security and other integrated concepts. OKD is also referred to as Origin in github and in the documentation.
+
+OKD provides a complete open source container application platform. If you are looking for enterprise-level support, or information on partner certification, Red Hat also offers https://www.openshift.com/[Red Hat OpenShift Container Platform].
+
+---
+
+[discrete]
+==  Continue reading...
+
+* link:dsf-okd-how-to-install.adoc[How to install Openshift Origin]
+* link:dsf-okd-initial-setup.adoc[Initial setup]
+** link:dsf-okd-s2i.adoc[s2i]
+** link:dsf-okd-templates.adoc[templates]
+** link:dsf-okd-customize.adoc[Customize Openshift]
+*** link:dsf-okd-customize-icons.adoc[Customize icons]
+*** link:dsf-okd-customize-catalog.adoc[Customize catalog]

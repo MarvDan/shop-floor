@@ -1,0 +1,72 @@
+== devonfw shop floor ${project.version}
+The devonfw community
+${project.version}, ${buildtime}: Subtitle {doctitle}
+:description: comprehensive documentation for the devonfw shop floor.
+:sectnums:
+:toc:
+:toc-title: Table of Contents
+:toclevels: 3
+ifdef::backend-pdf[]
+:title-logo-image: image:./images/devonfw.png[pdfwidth=5in,align=center]
+endif::[]
+:imagesdir: ./
+:footnote: test footnote
+:productname: test productname
+
+
+[preface]
+include::Home.adoc[leveloffset=0]
+
+:toc:
+
+include::dsf-how-to-use.adoc[leveloffset=1]
+
+==  Provisioning environments
+include::dsf-provisioning-production-line.adoc[leveloffset=2]
+include::dsf-provisioning-dsf4docker.adoc[leveloffset=2]
+
+==  Configuration and services integration
+include::dsf-configure-nexus.adoc[leveloffset=2]
+include::dsf-configure-sonarqube.adoc[leveloffset=2]
+
+==  Create project
+== Create and integrate git repository
+include::dsf-configure-gitlab.adoc[leveloffset=2].
+
+== start new devonfw project
+
+It is time to create your devonfw project:
+
+  * visit our https://github.com/devonfw/devonfw-tutorial-sources/wiki/build-devon4ng-application[devon4ng] guide.
+  * visitr our https://github.com/devonfw/devonfw-tutorial-sources/wiki/build-devon4j-application[devon4j] guide.
+
+== cicd configuration
+
+== ==  Manual configuration
+
+== == Jenkinsfile
+include::dsf-configure-jenkins.adoc[leveloffset=2].
+
+==  Deployment
+
+include::dsf-deployment-dsf4openshift.adoc[leveloffset=2].
+
+==  Annexes
+== Custom Services
+
+== ==  BitBucket
+include::dsf-openshift-services-bitbucket-basic-server-setup.adoc[leveloffset=3]
+include::dsf-openshift-services-bitbucket-extra-server-configuration.adoc[leveloffset=3]
+include::dsf-mirabaud-cicd-environment-setup.adoc[leveloffset=2]
+include::dsf-mirabaud-jenkins-gitLab-integration.adoc[leveloffset=3]
+include::dsf-mirabaud-jenkins-nexus-integration.adoc[leveloffset=3]
+include::dsf-mirabaud-jenkins-sonarqube-integration.adoc[leveloffset=3]
+include::dsf-okd.adoc[leveloffset=2]
+include::dsf-okd-how-to-install.adoc[leveloffset=3]
+include::dsf-okd-initial-setup.adoc[leveloffset=3]
+include::dsf-okd-s2i.adoc[leveloffset=3]
+include::dsf-okd-templates.adoc[leveloffset=3]
+include::dsf-okd-customize.adoc[leveloffset=3]
+include::dsf-okd-customize-icons.adoc[leveloffset=5]
+include::dsf-okd-customize-catalog.adoc[leveloffset=5]
+include::dsf-okd-customize-v3-7.adoc[leveloffset=5]

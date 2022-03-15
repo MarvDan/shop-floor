@@ -1,0 +1,4 @@
+== devonfw shop floor
+
+[.internal]
+devonfw-shop-floor
